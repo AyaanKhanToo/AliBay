@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html{
+    color-scheme: dark light;
+}
+body {
+    font-family: system-ui;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.wrapper{
+    color: black;
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+.site-title{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+.section-title{
+    color: black;
+    font-size: 2.25rem;
+}
+section{
+    color: white;
+    padding-block: 5rem;
+}
+.diagonal{
+    color: black;
+    position: relative;
+    isolation: isolate;
+}
+.diagonal::after{
+    content: "";
+    background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-5deg);
+}
+.diagonal-2{
+    position: relative;
+    isolation: isolate;
+}
+.diagonal-2::after{
+    content: "";
+    background-image: linear-gradient(45deg, gold, greenyellow, deepskyblue);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(5deg);
+
+}
+.spikes{
+    position: relative;
+}
+.spikes::after{
+    content: "";
+    background-image: linear-gradient(45deg, lightseagreen, plum, chocolate);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-5deg);
+}
+.diagonal-3{
+    color: black;
+    position: relative;
+    isolation: isolate;
+}
+.diagonal-3::after{
+    content: "";
+    background-image: linear-gradient(50deg, cadetblue, coral, limegreen);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(5deg);
+}
+.diagonal-4{
+    color: black;
+    position: relative;
+    isolation: isolate;
+}
+.diagonal-4::after{
+    content: "";
+    background-image: linear-gradient(50deg, dodgerblue, lightseagreen, crimson);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(-5deg)
+}
